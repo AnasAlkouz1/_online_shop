@@ -1,0 +1,238 @@
+
+
+@import "./vars";
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+font-family:$_font_family;
+background-color: $_body_Backbackground_color;
+font-weight: $_body_font_weight;
+color: $_custom_font_Color;
+height: auto;
+}
+
+._ant_dropdown_menu{
+& >.ant-dropdown-menu{
+min-width: 215px !important;
+background-color: $navbackground_color !important;
+backdrop-filter: blur($_NavFilterBlur) !important;
+li{
+padding: 15px !important;
+color: #fff !important;
+&:hover{
+background-color: lighten(#33ccff, 10%) !important;
+}
+}
+
+}
+}
+
+
+.ant-drawer-content{
+background-color: $navbackground_color !important;
+backdrop-filter: blur($_NavFilterBlur) !important;
+}
+.ant-drawer-title{
+color: #fff !important;
+}
+.ant-drawer{
+z-index: 9999999 !important;
+}
+.ant-select-selection-placeholder{
+color: $_custom_font_Color_v1;
+font-size: 15px;
+}
+.ant-select-selector{
+border-color:$_custom_font_Color_v1  !important;
+}
+.ant-select-selection-item{
+font-size: 14px;
+}
+.ant-collapse {
+background-color: #fff;
+}
+.anticon-star{
+font-size: 26px;
+}
+
+
+.ant-rate-star{
+color: #4c596f !important;
+}
+#_div_v0{
+min-height: 550px;
+height: auto;
+}
+#_div_v1{
+height: auto;
+margin-top: 2rem;
+}
+._fixed_buttom_n_c{
+padding-top: 1rem;
+min-height: 150px;
+width: 100%;
+background-color: $fixed_buttom_background_color;
+backdrop-filter: blur($_NavFilterBlur);
+}
+
+._div_f_r_4366422{
+color: $buttom_color;
+&>div{
+margin-block: 5px;
+cursor: pointer;
+&:hover{
+text-decoration: underline;
+}
+} 
+}
+._div_f_r_4366423{
+color: $buttom_color;
+&>div:first-child{
+margin-left: 1rem;
+color:$_NavItamsColor
+}
+&>div:last-child{
+display: flex;
+gap: 1rem;
+}
+
+}
+._btn_our_apps_appleStore{
+background-color: aliceblue;
+border:none;
+margin-top: 10px;
+cursor: pointer;
+width: 180px;
+height: 45px;
+display: flex;
+justify-content: center;
+&>span{
+font-size: 26px;
+margin-top: 5px;
+color: #4c596f;
+}
+& >div{
+margin-top: 1px;
+word-break: break-word;
+margin-left: 4px;
+
+& > span:first-child{
+font-size: 10px;
+}
+& > span:last-child{
+font-size: 15px;
+display: block;
+font-weight: 800;
+}
+
+}
+
+}
+
+._btn_our_apps_GooglePlay{
+background-color: aliceblue;
+border:none;
+margin-top: 10px;
+cursor: pointer;
+width: 180px;
+height: 45px;
+display: flex;
+justify-content: center;
+&>span{
+font-size: 26px;
+margin-top: 5px;
+color: #4c596f;
+}
+& >div{
+margin-top: 1px;
+word-break: break-word;
+margin-left: 4px;
+
+& > span:first-child{
+font-size: 10px;
+}
+& > span:last-child{
+font-size: 15px;
+display: block;
+font-weight: 800;
+}
+
+}
+
+}
+
+._div_f_r_4366424{
+color: $buttom_color;
+&>div:first-child{
+margin-left: 2rem;
+color: $_NavItamsColor;
+}
+&>div:last-child{
+margin-left: 30px;
+display: flex;
+gap: 1rem;
+
+
+& > div{
+cursor: pointer;
+margin-top: 10px;
+width: 50px;
+height: 50px;
+background-color: aliceblue;
+border-radius: 50rem;
+text-align: center;
+font-size: 28px;
+padding-top: 10px;
+
+}
+
+
+
+}
+
+
+
+}
+
+.ant-drawer-body{
+overflow-x: hidden !important;
+}
+.ant-drawer {
+font-family: "Montserrat", sans-serif !important;
+}
+.ant-drawer-header{
+border-bottom: 1px solid #33ccff !important;
+}
+.ant-drawer-header-title{
+display: flex;
+flex-direction: row-reverse;
+}
+
+
+@media (max-width:999px){
+
+._div_f_r_4366423,._div_f_r_4366424{
+&>div:last-child{
+flex-direction: column;
+gap: 0;
+}
+}
+}
+
+
+
+@media (max-width:576px){
+
+
+
+    
+    .ant-space-item{
+    font-size: 12px !important;
+    }
+    
+
+    }
